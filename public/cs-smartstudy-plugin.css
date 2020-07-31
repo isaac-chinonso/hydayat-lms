@@ -1,0 +1,860 @@
+/* cs-signup-form style */
+.wp-smartstudy .cs-signup-form{margin-bottom: 30px;}
+.wp-smartstudy .cs-has-error:before{position: absolute; content: '\e5cd'; font-family: icomoon; bottom: 45px; right: 15px; width: 18px; height: 19px; line-height: 18px; padding-left: 1px; border-radius: 50%; border:1px solid #e15a45; color: #e15a45; cursor: pointer;}
+.wp-smartstudy .cs-signup-form  h6{font-size: 12px; margin-bottom: 10px; letter-spacing: 0 !important; text-transform: uppercase !important;}
+.wp-smartstudy .cs-signup-form .cs-has-error i{color: #e15a45 !important;}
+.wp-smartstudy .cs-has-error input[type="text"]{background: #fff; border:1px solid #e15a45; height: 50px; padding-left: 35px;}
+.wp-smartstudy .cs-signup-form .cs-field-holder{position: relative;}
+.wp-smartstudy .cs-signup-form .cs-field-holder:after{display: block; clear: both; content: '';}
+.wp-smartstudy .cs-signup-form .cs-field-holder i{position: absolute; bottom: 49px; left: 15px; color: #c2c2c2; font-size: 13px;}
+.wp-smartstudy .cs-signup-form .cs-field-holder input[type="password"],  .wp-smartstudy .cs-signup-form .cs-field-holder input[type="text"]{height: 50px; padding-left: 35px; font-size: 13px; margin-bottom: 30px;}
+.wp-smartstudy .cs-signup-form .cs-btn-submit{color: #fff; display: inline-block; position: relative; transition: all 0.3s ease 0s; z-index: 1; margin-bottom: 20px;}
+.wp-smartstudy .cs-signup-form .cs-btn-submit input[type="submit"] {background: rgba(0, 0, 0, 0) none repeat scroll 0 0; border: 0 none; border-radius: 3px; color: #fff !important; cursor: pointer; font-size: 13px; font-weight: 700; height: 43px; letter-spacing: 1px; line-height: 16px; padding: 10px 25px; position: relative; text-align: center; text-transform: uppercase; transition: all 0.3s ease 0s; width: auto; z-index: 5;}
+.wp-smartstudy .cs-signup-form .cs-btn-submit input[type="submit"] {display: inline-block; text-decoration: none;}
+.wp-smartstudy .cs-signup-form .cs-btn-submit:before {border-bottom: 1px solid #2277ae; border-top: 1px solid #2277ae; bottom: 0; content: ""; height: 100%; left: 0; opacity: 0; position: absolute; transform: scale(0.1, 1); transition: all 0.3s ease 0s; width: 100%; z-index: 1;}
+.wp-smartstudy .cs-signup-form .cs-btn-submit:hover input[type="submit"] {color: #2277ae !important;}
+.wp-smartstudy .cs-signup-form .cs-btn-submit:hover:before {opacity: 1; transform: scale(1, 1);}
+.wp-smartstudy .cs-signup-form .cs-btn-submit:after {background-color: #2277ae; border-radius: 3px; bottom: 0; content: ""; height: 100%; left: 0; position: absolute; transition: all 0.3s ease 0s; width: 100%; z-index: 1;}
+.wp-smartstudy .cs-signup-form .cs-btn-submit:hover:after {opacity: 0; transform: scale(0.1, 1);}
+.wp-smartstudy .cs-signup-form .cs-forgot-password{float: right; color: #303030; font-size: 12px; margin:0; text-decoration: none;}
+.wp-smartstudy .cs-signup-form .cs-forgot-password i{ color: #81c483 !important; display: inline-block; vertical-align: middle; font-size: 18px; padding: 0 5px; margin: -2px 0 0;}
+.wp-smartstudy .cs-signup-form .cs-checkbox{margin-bottom: 30px;}
+.wp-smartstudy .cs-signup-form .cs-checkbox label{position: relative; cursor: pointer; padding-left: 23px; color: #999; font-size: 12px;}
+.wp-smartstudy .cs-signup-form .cs-checkbox label:before{position: absolute; content: ''; background: #fff; border:1px solid #c7c7c7; left: 0; top: 7px; width: 14px; height: 14px;}
+.wp-smartstudy .cs-signup-form .cs-checkbox input[type="checkbox"]{display: none;}
+.wp-smartstudy .cs-signup-form .cs-checkbox input[type="checkbox"]:checked + label:after{position: absolute; content: '\e9a1'; font-size: 12px; line-height: 27px; font-family: icomoon; top: 0; left: 0;}
+.wp-smartstudy .cs-signup-form .cs-field-holder .cs-radio{float: left; margin-right: 20px; margin-bottom: 20px;}
+.wp-smartstudy .cs-signup-form .cs-field-holder .cs-radio input[type="radio"]{display: none;}
+.wp-smartstudy .cs-signup-form .cs-field-holder .cs-radio label{position: relative; cursor: pointer; padding-left: 20px; color: #999; font-size: 12px; text-transform: capitalize; color: #303030; font-weight: 400;}
+.wp-smartstudy .cs-signup-form .cs-field-holder .cs-radio label:before{position: absolute; content: ''; width: 16px; height: 16px; border-radius: 50%; border:1px solid #aaa; top: 5px; left: 0;}
+.wp-smartstudy .cs-signup-form .cs-field-holder .cs-radio input[type="radio"]:checked + label:before{position: absolute; content: '\e95b'; font-family: icomoon; color: #474e59; top: 5px; left: 0; text-align: center; font-size: 11px; line-height: 13px;}
+.wp-smartstudy .cs-success input[type="text"]{border:1px solid #abd8ac; background: #fff; height: 50px; padding-left: 35px;}
+.wp-smartstudy .cs-success i{color: #abd8ac !important;}
+/* .cs-course-slider */
+.wp-smartstudy .cs-course-slider{margin-bottom: 30px; position: relative;}
+.wp-smartstudy .cs-course-slider .slick-list.draggable{overflow: hidden;}
+.wp-smartstudy .cs-course-slider li{list-style: none; float: left; margin: 0 20px 0 0; padding: 0;}
+.wp-smartstudy .cs-course-slider li img{width: 100%;}
+.wp-smartstudy .cs-course-slider .slick-prev{position: absolute; top: -50px; right: 50px; border:0; background: none; text-indent: -9999px; width: 28px; height: 28px; border-radius: 50%; border:1px solid #f4f4f4; transition:all 0.3s ease 0s;}
+.wp-smartstudy .cs-course-slider .slick-prev:before{position: absolute; content: '\e314'; font-family: icomoon; top: 0; left: 5px; text-indent: 0; font-size: 15px; color: #808080;}
+.wp-smartstudy .cs-course-slider .slick-next{position: absolute; top: -50px; right: 15px; border:0; background: none; text-indent: -9999px; width: 28px; height: 28px; border-radius: 50%; border:1px solid #f4f4f4; transition:all 0.3s ease 0s;}
+.wp-smartstudy .cs-course-slider .slick-next:before{position: absolute; content: '\e315'; font-family: icomoon; top: 0; left: 5px; text-indent: 0; font-size: 15px; color: #808080;}
+.wp-smartstudy .cs-course-slider .slick-prev:hover{background: #2277ae; color: #fff; border:1px solid #2277ae;}
+.wp-smartstudy .cs-course-slider .slick-next:hover{background: #2277ae; color: #fff; border:1px solid #2277ae;}
+.wp-smartstudy .cs-course-slider .slick-prev:hover:before, .wp-smartstudy .cs-course-slider .slick-next:hover:before{color: #fff;}
+.wp-smartstudy .courses-grid .cs-text{padding: 15px 12px 10px !important;}
+/* cs-share-media */
+.wp-smartstudy .cs-page-title .cs-share-media{margin: 0 0 30px; padding: 0;}
+.wp-smartstudy .cs-page-title .cs-share-media li{list-style: none; margin: 0; padding: 0; display: inline-block;}
+.wp-smartstudy .cs-page-title .cs-share-media li a{display: block; padding: 3px 15px; color: #fff; font-weight: 700; letter-spacing: 0; text-decoration: none; font-size: 16px; border-radius: 4px; margin-bottom: 10px;}
+.wp-smartstudy .cs-page-title .cs-share-media li a[data-original-title="facebook"]{background:#4861a3;}
+.wp-smartstudy .cs-page-title .cs-share-media li a[data-original-title="twitter"]{background:#1bb2e9;}
+.wp-smartstudy .cs-page-title .cs-share-media li a[data-original-title="google-plus"]{background:#df4a32;}
+.wp-smartstudy .cs-page-title .cs-share-media li a i{margin-right: 5px;}
+.cs-box-width{width: 300px; height: 200px; -moz-transform: scale(1) rotate(20deg);
+-webkit-transform: scale(1) rotate(20deg);
+-o-transform: scale(1) rotate(20deg);
+-ms-transform: scale(1) rotate(20deg);
+transform: scale(1) rotate(20deg);}
+/* Coureses pages Style Start */
+/* Cs Values Style */
+.wp-smartstudy .cs-values{width: 26px; height: 12px; background-color: #f3f3f3; border-radius: 8px; display: inline-block; position: relative; vertical-align: middle;}
+.wp-smartstudy .cs-values em{background-color: #ffae00; width: 9px;border-right: 2px solid #fff; display: inline-block; vertical-align: top; height: 12px;}
+.wp-smartstudy .cs-values em:first-child{border-radius: 8px 0 0px 8px;}
+.wp-smartstudy .cs-values em:nth-child(3){border-radius: 0px 8px 8px 0px; border-right: none; width: 8px;}
+/* Cs Values Style */
+/* Cs Sorting List Style Start */
+.wp-smartstudy .cs-courses .cs-courses-price, .wp-smartstudy .cs-courses .cs-post-meta span a, .wp-smartstudy .cs-sorting-list .cs-package-list li a,
+.wp-smartstudy .cs-sorting-list .chosen-container-single .chosen-single, .wp-smartstudy .cs-sorting-list .cs-caption-select label, .wp-smartstudy .cs-caption,
+.wp-smartstudy .cs-courses .cs-free, .wp-smartstudy .cs-rating em, .wp-smartstudy .cs-courses .cs-post-options span,
+.wp-smartstudy .cs-courses.courses-simple li.cs-header span, .wp-smartstudy .cs-courses.courses-simple li .post-date, 
+.wp-smartstudy .cs-courses.courses-simple li .cs-price span, .cs-courses-detail .cs-courses-overview ul li,
+.cs-courses-detail .cs-courses-overview .shortlist-btn, .cs-accordion-list .panel-heading .cs-type-btn,
+.wp-smartstudy .cs-review-item .cs-item-list span small, .wp-smartstudy .cs-review-item .label, .wp-smartstudy .cs-review-summary .review-average-score em,
+.wp-smartstudy .cs-review-summary .review-average-score .cs-overall-rating, .cs-listing-filters li .checkbox label, .wp-smartstudy .widget .cs-price span{font-family: 'Montserrat', sans-serif;}
+.wp-smartstudy .cs-sorting-list:after{content: ""; display: block; clear: both;}
+.wp-smartstudy .cs-sorting-list{padding: 11px 18px 11px 14px; background-color: #f4f4f4; margin-bottom: 34px;}
+.wp-smartstudy .cs-sorting-list ul{margin: 0px; padding:0px;}
+.wp-smartstudy .cs-sorting-list ul li{list-style: none;}
+.wp-smartstudy .cs-sorting-list ul li a{text-decoration: none; outline: none;}
+.wp-smartstudy .cs-sorting-list .cs-left-side{float: left;}
+/* cs select */
+.wp-smartstudy .cs-sorting-list .cs-select-holder{display: inline-block; width: 210px; margin-right: 5px; vertical-align: top;}
+.wp-smartstudy .cs-sorting-list .chosen-container-single .chosen-single{height: 32px; border:none; box-shadow: none; background:none; background-color:#fff; border-radius: 0px; font-size: 12px; color: #555555; line-height: 31px; padding-left: 15px; font-weight: bold;}
+.wp-smartstudy .cs-sorting-list .chosen-container-single .chosen-single:after{content: "\e313"; position: absolute; right: 8px; top:0px; font-size: 18px; color: #cbcbcb; font-family: "icomoon";}
+.wp-smartstudy .cs-sorting-list .chosen-container-single .chosen-search input[type="text"]{background: none; background-color:#fff;}
+.wp-smartstudy .cs-sorting-list .chosen-container .chosen-drop{ border-radius: 0px; border:none; }
+.wp-smartstudy .cs-sorting-list .chosen-container .chosen-results li{padding: 8px 6px;}
+/* cs package select */
+.wp-smartstudy .cs-sorting-list .cs-package-list{display: inline-block; margin-right: 9px; vertical-align: top;}
+.wp-smartstudy .cs-sorting-list .cs-package-list li{display: inline-block; margin-right: -3px;}
+.wp-smartstudy .cs-sorting-list .cs-package-list li a{font-size: 12px; color: #555; display: block; padding: 8px 12px 8px 12px; margin-right: -1px; background-color: #fff; line-height: 16px; font-weight: 400;}
+.wp-smartstudy .cs-sorting-list .cs-package-list li a:hover{color: #fff;}
+/* cs caption select */
+.wp-smartstudy .cs-sorting-list .cs-caption-select{display: inline-block; background-color: #fff; padding: 2px 15px 2px 10px; height: 32px; line-height: 25px; vertical-align: top;}
+.wp-smartstudy .cs-sorting-list .cs-caption-select input[type="checkbox"]{display: none;}
+.wp-smartstudy .cs-sorting-list .cs-caption-select input[type="checkbox"]:checked + label:after{content: "\e5ca"; font-size: 14px; color: #555; position: absolute; right: -1px; top: 0; font-family: "icomoon";} 
+.wp-smartstudy .cs-sorting-list .cs-caption-select label{ margin-bottom: 0px; line-height: 16px; font-size: 12px; color: #555; font-weight: 400; padding-right: 34px; position: relative; cursor: pointer;}
+.wp-smartstudy .cs-sorting-list .cs-caption-select label:before{content: ""; position: absolute; right: 0px; top: 2px; width: 13px; height: 13px; border:1px solid #eef0f3;}
+.wp-smartstudy .cs-caption{display: inline-block; font-size: 10px; color: #fff; font-weight: 400; line-height: 16px; background-color: #808080; padding: 0 4px;}
+.wp-smartstudy .cs-list-view{float: right;}
+.wp-smartstudy .cs-list-view li:first-child{margin-left: 0px;}
+.wp-smartstudy .cs-list-view li{display: inline-block; margin-right: -4px; vertical-align: top; margin-left: 10px;}
+.wp-smartstudy .cs-list-view li a{display: block; font-size: 24px; color: #aaa; }
+.wp-smartstudy .cs-list-view li a:hover{color: #fff;}
+/* Cs Sorting List Style End */
+/* cs Rating Style */
+.wp-smartstudy .cs-rating{display: block;}
+.wp-smartstudy .cs-rating .cs-rating-star {display: inline-block; height: 20px; line-height: 19px; position: relative; vertical-align: middle; width: 90px;}
+.wp-smartstudy .cs-rating .cs-rating-star:before{content: "\f005 \f005 \f005 \f005 \f005"; font-size: 16px; color: #555; font-family: "icomoon"; letter-spacing: 3px;}
+.wp-smartstudy .cs-rating .cs-rating-star .rating-box{height: 20px; left: 0; overflow: hidden; position: absolute; top: 0;}
+.wp-smartstudy .cs-rating .cs-rating-star .rating-box:before{content: "\f005 \f005 \f005 \f005 \f005"; font-family: "icomoon"; font-size: 16px; color: #f8ab47; letter-spacing: 3px;}
+.wp-smartstudy .cs-rating em{color: #aaaaaa; font-size: 12px; font-style: normal;}
+/* Cs Coureses Style Start */
+/* Cs Coureses Default */
+.wp-smartstudy .cs-courses .cs-media figure img{width: 100%;}
+.wp-smartstudy .cs-courses .cs-rating{display: inline-block; margin-bottom: 12px;}
+.wp-smartstudy .cs-courses .cs-caption{margin-right: 5px; font-weight: bold;}
+.wp-smartstudy .cs-courses a{text-decoration: none; outline: none;}
+.wp-smartstudy .cs-courses .cs-courses-price{font-size: 18px; color: #333; font-weight: bold; margin-bottom: 15px; display: inline-block;}
+.wp-smartstudy .cs-courses .cs-courses-price em{font-weight: 400; font-style: normal;}
+.wp-smartstudy .cs-courses .cs-post-meta{display: block; margin: 0px; padding: 12px 0 0 0; border-top:2px solid #f6f6f6;}
+.wp-smartstudy .cs-courses .cs-post-meta span{list-style:none; display: inline-block; font-size: 12px; color: #aaaaaa; line-height: 16px; vertical-align: top; font-weight: bold;}
+.wp-smartstudy .cs-courses .cs-post-meta span a{font-size: 12px; text-decoration: underline;}
+.wp-smartstudy .cs-courses .cs-free{font-size: 16px; color: #81c483; text-transform: uppercase; margin-bottom: 15px; font-weight: bold; display: inline-block;}
+/* Courses Grid */
+.wp-smartstudy .courses-grid{margin-bottom: 40px;}
+.wp-smartstudy .courses-grid .cs-post-title h5{margin-bottom: 13px;}
+.wp-smartstudy .courses-grid img{width: 100%;}
+.wp-smartstudy .courses-grid .cs-text{padding: 15px 20px 10px 20px; background-color: #fff; border:1px solid #eeeeee;}
+/* Courses Listing */
+.wp-smartstudy .cs-courses.courses-listing {margin-left: 20px;}
+.wp-smartstudy .cs-courses.courses-listing .cs-post-title h2, .wp-smartstudy .cs-courses.courses-listing .cs-post-title h3,.wp-smartstudy .cs-courses.courses-listing .cs-post-title h4{margin-bottom: 0px;}
+.wp-smartstudy .cs-courses.courses-listing li:last-child{padding-bottom: 0px; border-bottom: none;}
+.wp-smartstudy .cs-courses.courses-listing li{margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid #f5f6f7; padding-left:0; padding-right:0;}
+.wp-smartstudy .cs-courses.courses-listing .cs-post-options span .cs-caption{padding: 0 4px; color: #fff; margin-left: 5px;}
+.wp-smartstudy .cs-courses.courses-listing .cs-post-options span .cs-caption:before{display: none;}
+.wp-smartstudy .cs-courses P{margin-bottom: 10px;}
+.wp-smartstudy .cs-courses.courses-listing .cs-post-meta span a{text-decoration:none;}
+.wp-smartstudy .cs-courses.courses-listing .cs-media{float: left; margin-right: 30px;}
+.wp-smartstudy .cs-courses.courses-listing .cs-text{overflow: hidden;}
+.wp-smartstudy .cs-courses.courses-listing .cs-post-title{width: 70%; display: inline-block; margin-right: -4px;}
+.wp-smartstudy .cs-courses.courses-listing .cs-price-sec{display: inline-block; width: 30%; margin-right: -4px; text-align: right; padding-left: 60px; text-align: left;}
+.wp-smartstudy .cs-courses.courses-listing .cs-price-sec .cs-courses-price{display: block; font-size: 28px; margin-bottom: 3px;}
+.wp-smartstudy .cs-courses.courses-listing .cs-post-meta{padding: 0px; border: none;}
+.wp-smartstudy .cs-courses.courses-listing .cs-post-meta span, .wp-smartstudy .cs-courses.courses-listing .cs-post-meta span a{font-size: 14px;}
+.wp-smartstudy .cs-courses .cs-post-options span .cs-caption{padding: }
+.wp-smartstudy .cs-courses.courses-listing .cs-values{margin-right: 10px; padding: 0px;}
+.wp-smartstudy .cs-courses .cs-post-options span{padding: 0 10px; position: relative; font-size: 12px; color: #aaaaaa;}
+.wp-smartstudy .cs-courses .cs-post-options span:first-child{padding-left: 0px;}
+.wp-smartstudy .cs-courses .cs-post-options span:first-child:before{display: none;}
+.wp-smartstudy .cs-courses .cs-post-options span:before{content: ""; position: absolute; left: -4px; top: 8px; width: 3px; height: 3px; background-color: #ebedef;}
+.wp-smartstudy .cs-courses .cs-post-options span i{font-size: 14px; color: #aaaaaa; margin-right: 4px; display: inline-block; vertical-align: middle;}
+/* Courses Simple */
+.wp-smartstudy .cs-courses.courses-simple{margin-bottom: 40px;}
+.wp-smartstudy .cs-courses.courses-simple li.cs-header{border-bottom: 3px solid #f5f6f7; padding:0 0px 15px 0;}
+.wp-smartstudy .cs-courses.courses-simple li{ list-style: none; padding: 15px 0px; border-bottom: 1px solid #f5f6f7;}
+.wp-smartstudy .cs-courses.courses-simple li.cs-header span, .wp-smartstudy .cs-courses.courses-simple li.cs-header .cs-price span{ font-size: 12px; color: #aaaaaa; text-transform: uppercase; font-weight: bold;}
+.wp-smartstudy .cs-courses.courses-simple li .cs-courses-name{width: 65%; display: inline-block; margin-right: -4px;}
+.wp-smartstudy .cs-courses.courses-simple li .cs-courses-date{width: 17%; display: inline-block; margin-right: -4px;}
+.wp-smartstudy .cs-courses.courses-simple li .cs-courses-level{width: 10%; display: inline-block; margin-right: -4px;}
+.wp-smartstudy .cs-courses.courses-simple li .cs-price{width: 8%; display: inline-block; margin-right: -4px;}
+.wp-smartstudy .cs-courses.courses-simple li h6 {margin-bottom: 0px;}
+.wp-smartstudy .cs-courses.courses-simple li .post-date{font-size: 12px; font-weight: bold; color: #aaaaaa;}
+.wp-smartstudy .cs-courses.courses-simple li .cs-price span{font-size: 12px; font-weight: 400; color: #333;}
+.wp-smartstudy .cs-courses.courses-simple li .cs-free{margin-bottom: 0px;}
+/* Cs Coureses  Style End */
+/* Coureses pages  Style End */
+/* Cs Paginations Style Start */
+.wp-smartstudy .cs-pagination{margin-bottom: 40px;}
+.wp-smartstudy .cs-pagination .pagination{margin: 0px; border-radius: 0px;}
+.wp-smartstudy .cs-pagination .pagination li a{border-radius: 0px; position: relative;}
+.wp-smartstudy .cs-pagination .pagination li a:hover:before{width: 100%;}
+.wp-smartstudy .cs-pagination .pagination li a:before{content: ""; position: absolute; left: 0px; top: 0; width: 0; height: 2px; border-top: 2px solid;}
+.wp-smartstudy .cs-pagination .pagination > li > a, .wp-smartstudy .cs-pagination .pagination > li > span{border-color:#f0f0f0; font-size: 14px; color: #8f8f8f; font-weight: bold; padding: 8px 14px; text-decoration: none; outline: none;}
+.wp-smartstudy .cs-pagination .pagination > li > a:hover, .wp-smartstudy .cs-pagination .pagination > li > span:hover, .wp-smartstudy .cs-pagination .pagination > li > a:focus, .wp-smartstudy .cs-pagination .pagination > li > span:focus{background:none;}
+/* Cs Paginations Style End */
+
+
+/* Cs Coureses Detail Style Start */
+.cs-courses-detail .cs-section-title, .cs-team-detail .cs-section-title{position: relative; margin-bottom: 30px;}
+.cs-courses-detail .cs-section-title:before, .cs-team-detail .cs-section-title:before{content: ""; position: absolute; left: 0px; bottom: 0px; width: 60px; height: 3px;}
+.cs-courses-detail .cs-section-title h3, .cs-team-detail .cs-section-title h3{padding-bottom: 10px;}
+.cs-courses-detail .cs-about-courses strong{font-size: 14px; font-weight: 600; margin-bottom: 20px; display: block;}
+.cs-courses-detail .cs-courses-overview{background-color: #f8f8f8; padding: 30px; border-radius: 3px;}
+.cs-courses-detail .cs-courses-overview ul{margin: 0px 0 20px 0; padding: 0px;}
+.cs-courses-detail .cs-courses-overview ul li{list-style: none; font-size: 13px; font-weight: bold; padding: 4px 0px;}
+.cs-courses-detail .cs-courses-overview ul li span{color: #aaaaaa; font-weight: normal;}
+.cs-courses-detail .cs-courses-overview ul li i{display: inline-block; margin-right: 8px; color: #aaaaaa; font-size: 16px; vertical-align: middle;}
+.cs-courses-detail .cs-courses-overview .shortlist-btn{display: inline-block; font-size: 11px; font-weight: bold;  color: #fff; text-transform: uppercase; text-decoration: none; outline: none; padding: 0 15px; height: 36px; line-height: 36px; border-radius: 2px;}
+.cs-courses-detail .cs-courses-overview .shortlist-btn i{display: inline-block; font-size: 13px; margin-right: 5px;}
+.cs-courses-detail .cs-list-style{margin: 0 0 20px 0; padding: 0px;}
+.cs-courses-detail .cs-list-style li{list-style: none; font-size: 14px; color: #777; line-height: 36px;}
+.cs-courses-detail .cs-list-style li i{font-size: 10px; display: inline-block; margin-right: 15px;}
+
+
+/* Cs Accordion List Style */
+.wp-smartstudy .cs-accordion-list{margin-bottom: 40px;}
+.wp-smartstudy .cs-accordion-list .panel:first-child{border-top:1px solid #f5f6f7;}
+.wp-smartstudy .cs-accordion-list a{text-decoration: none; outline:  none;}
+.wp-smartstudy .cs-accordion-list .panel-default > .panel-heading{background:none; background-image: none;}
+.wp-smartstudy .cs-accordion-list .panel-heading{border-radius: 0px; border-bottom:1px solid #f6f7f8; position: relative; padding: 0px;}
+.wp-smartstudy .cs-accordion-list .panel{border-radius: 0px; box-shadow: none; border:none; margin-bottom: 0px;}
+.wp-smartstudy .cs-accordion-list .panel-title a{display: block; padding: 20px 0px 10px 45px; background-color: #fafafa; position:relative;}
+.wp-smartstudy .cs-accordion-list .panel-title, .wp-smartstudy .cs-accordion-list .panel-title a{font-size: 14px; font-weight: 400!important;}
+.wp-smartstudy .cs-accordion-list .panel-title a i{font-size: 20px; display: inline-block; margin-right: 15px; vertical-align: middle; position:absolute; left:10px;}
+.wp-smartstudy .cs-accordion-list .panel-heading .cs-type-btn{position: absolute; right: 0px; top: 15px; border-radius: 3px; color: #fff; display: inline-block; text-transform: uppercase; font-size: 10px; width: 65px; height: 22px; line-height: 23px; text-align: center; font-weight: 400; letter-spacing: 0px;}
+.wp-smartstudy .cs-accordion-list .panel-heading .cs-type-btn.private{color: #aaa;}
+.wp-smartstudy .cs-accordion-list .panel-heading .cs-type-btn.private i{font-size: 17px; color: #d4d4d4; display: inline-block; margin: -3px 5px 0 0; left:-10px; top:4px;}
+.wp-smartstudy .cs-accordion-list .panel-collapse{padding: 0px 20px 10px 50px;}
+.wp-smartstudy .cs-accordion-list .collapse.in{background-color: #fafafa;}
+.wp-smartstudy .cs-accordion-list .panel-title a .cs-type-btn{right: 30px;}
+.wp-smartstudy .cs-accordion-list .panel-title a:after{content: "\e5cd"; position: absolute; right: 8px; top: 3px; font-size: 14px; color: #c3c3c3; font-family: "icomoon";}
+.wp-smartstudy .cs-accordion-list .panel-title a.collapsed .cs-type-btn{right: 0px;}
+.wp-smartstudy .cs-accordion-list .panel-title a.collapsed:after{display: none;}
+.wp-smartstudy .cs-accordion-list .panel-title a.collapsed{background-color: #fff;}
+.wp-smartstudy .cs-accordion-list .panel-title a .cs-questions{color: #999999; background-color: #fff; border:1px solid #f3f3f3;}
+.wp-smartstudy .cs-accordion-list .panel-title a .cs-questions{font-size: 10px; display: inline-block; padding: 0 6px; border-radius: 2px; text-transform: uppercase; font-weight: bold;}
+.wp-smartstudy .cs-accordion-list .panel-title a.collapsed .cs-questions{ color: #fff; background-color: #687a99; border: none;}
+/* Cs Faqs List Style */
+.wp-smartstudy .cs-faqs-list{margin-bottom: 40px;}
+.wp-smartstudy .cs-faqs-list .panel-default > .panel-heading{border:none; background-image: none; background:none; padding: 0px;}
+.wp-smartstudy .cs-faqs-list .panel{border:none; box-shadow: none; border-radius: 0px; margin-bottom: 15px;}
+.wp-smartstudy .cs-faqs-list .panel-title a{ padding: 5px 10px 5px 25px; display: block;}
+.wp-smartstudy .cs-faqs-list .panel-title, .wp-smartstudy .cs-faqs-list .panel-title a{font-size: 14px; font-weight: 400 !important; position: relative;}
+.wp-smartstudy .cs-faqs-list .panel-title a{text-decoration: none; outline: none;}
+.wp-smartstudy .cs-faqs-list .panel-title a.collapsed:before, .wp-smartstudy .cs-faqs-list .panel-title a:before{content: "\f105"; position: absolute; left: 0px; top: 4px; font-size: 16px; color: #b9b9b9; font-family: "icomoon" !important;}
+.wp-smartstudy .cs-faqs-list .panel-title a:before{content: "\f107";}
+.wp-smartstudy .cs-faqs-list .panel-title a.collapsed:before{color: #b9b9b9 !important;}
+.wp-smartstudy .cs-faqs-list .panel-title a.collapsed{ color: #333333 !important;}
+.wp-smartstudy .cs-faqs-list .panel-collapse{padding:10px 0 0 30px;}
+/* Cs reviews Style Start */
+.wp-smartstudy .cs-rating-reviews{padding:40px 0px 30px 0; border-top: 1px solid #d7d8da; border-bottom: 1px solid #d7d8da; margin-bottom: 40px;}
+.wp-smartstudy .cs-review-item{display:inline-block; margin-bottom: 24px; height: 16px; width: 100%;}
+.wp-smartstudy .cs-review-item:last-child{margin-bottom: 0px;}
+.wp-smartstudy .cs-review-item .label{font-size: 13px; color: #555; display: inline-block; width: 15%; margin-right: -4px; vertical-align: top; text-align: left; padding: 0px; font-weight: bold;}
+.wp-smartstudy .cs-review-item .cs-item-list{background-color: #efeff0; height: 16px; width: 85%; display: inline-block; margin-right: -4px; vertical-align: top; position: relative;}
+.wp-smartstudy .cs-review-item .cs-item-list span{position: absolute; top:0; background-color: #207dba; height: 16px; }
+.wp-smartstudy .cs-review-item .cs-item-list span small{color: #fff; font-weight: 400; font-size: 10px; height: 16px; line-height: 15px; display: block; text-align: right; margin-right: 8px;}
+.wp-smartstudy .cs-review-box{width: 72%; margin-right: 30px; display: inline-block; vertical-align: top;}
+.wp-smartstudy .cs-review-summary{width: 20%; margin-left: 30px; display: inline-block; vertical-align: top;}
+.wp-smartstudy .cs-review-summary .review-average-score{padding: 27px 25px 32px 25px; display: inline-block; text-align: center; border:2px solid;}
+.wp-smartstudy .cs-review-summary .review-average-score em{font-size: 60px; line-height: 60px; display: block; font-style: normal; font-weight: 400;}
+.wp-smartstudy .cs-review-summary .review-average-score .cs-overall-rating{font-size: 14px; color: #555;}
+/* Cs reviews Style End */
+.wp-smartstudy .cs-review-list{margin: 0px 0 40px 0; padding: 0px; border-bottom: 1px solid #d7d8da;}
+.wp-smartstudy .cs-review-list li{list-style: none; margin-bottom: 30px;}
+.wp-smartstudy .cs-review-list li .cs-media{float: left; margin-right: 40px;}
+.wp-smartstudy .cs-review-list li .cs-media figure, .wp-smartstudy .cs-review-list li .cs-media figure img{border-radius: 100%;}
+.wp-smartstudy .cs-review-list li .cs-text{overflow: hidden;}
+.wp-smartstudy .cs-review-list li h6{display: inline-block; margin:0 10px 0 0; }
+.wp-smartstudy .cs-review-list li .cs-post-date{color: #aaaaaa; font-size: 12px;}
+.wp-smartstudy .cs-review-list li p{margin-bottom: 10px;}
+.wp-smartstudy .cs-add-review .cs-your-rating{margin-bottom: 10px;}
+.wp-smartstudy .cs-add-review .cs-your-rating h6{margin-bottom: 6px;}
+.wp-smartstudy .cs-review-form form textarea{width: 100%; height: 135px; border:1px solid #f3f3f3;}
+.wp-smartstudy .cs-review-form form .input-holder{margin-bottom: 20px;}
+.wp-smartstudy .cs-review-form form .input-holder input[type="text"]{font-size: 12px; color: #666; border:1px solid #f3f3f3; margin-bottom: 15px;}
+.wp-smartstudy .cs-review-form form label{font-size: 12px; font-weight: normal;}
+.wp-smartstudy .cs-review-form form .cs-button{display: inline-block; font-size: 11px; font-weight: bold; color: #fff; text-transform: uppercase; height: 38px; line-height: 38px; padding:0 30px; text-decoration: none; outline: none; border-radius: 3px;}
+/* Cs Coureses Detail Style End */
+/* Find Search Style */
+.wp-smartstudy .cs-find-search {background-color: #474e59; margin: 0 0 30px; padding: 20px; position: relative;}
+.wp-smartstudy .cs-find-search:before {content:"\e8b6"; font-family: "icomoon"; color: rgba(255, 255, 255, 0.1); font-size: 400px; height: 350px; line-height: normal; overflow: hidden;    pointer-events: none; position: absolute; right: 0; width: 230px; z-index: 1; bottom: -10px;}
+.wp-smartstudy .cs-find-search:after {content:""; clear:both; display:block;}
+.wp-smartstudy .cs-find-search h6 {color:#fff !important; text-transform:uppercase !important; margin:0 0 5px;} 
+.wp-smartstudy .cs-find-search span {font-size:13px; color:#afb5bf; display:block; letter-spacing:0; margin:0 0 20px;}
+.wp-smartstudy .cs-find-search form {position:relative; z-index:2;}
+.wp-smartstudy .cs-find-search .cs-label-area {margin:0 0 20px;}
+.wp-smartstudy .cs-find-search .cs-label-area input[type="radio"] {display:none;}
+.wp-smartstudy .cs-find-search .cs-label-area label {line-height:normal; font-size:12px; color:#fff; position:relative; padding:0 7px 0 22px; cursor:pointer;}
+.wp-smartstudy .cs-find-search .cs-label-area label:before {position:absolute; left:0; top:1px; width:15px; height:15px; border-radius:100%; border:1px solid #a9a9aa; content: "";}
+.wp-smartstudy .cs-find-search .cs-label-area input[type="radio"]:checked + label:after {background-color: #fafafa; border-radius: 100%; content: ""; display: block; height: 7px; left: 4px; position: absolute; top: 5px; width: 7px;}
+.wp-smartstudy .cs-find-search .cs-input-area input[type="text"] {height:40px; margin:0 0 15px; border-radius:3px; font-size:12px; color:#808080; font-weight:600; width:100%; padding-left:30px;}
+.wp-smartstudy .cs-find-search .cs-input-area .cs-input-holder{position:relative;}
+.wp-smartstudy .cs-find-search .cs-input-area .cs-input-holder i {position:absolute; left:12px; top:12px; content: "\ea04"; font-family: "icomoon"; color:#aeaeae; font-size:15px;z-index:1;}
+.wp-smartstudy .cs-find-search  .chosen-container-single .chosen-single {background: #fff; border: medium none; border-radius: 3px; box-shadow: none; height: 40px; line-height: 38px; padding-left: 32px; position:relative;}
+.wp-smartstudy .cs-find-search  .chosen-container-single .chosen-single:before,
+.wp-smartstudy .cs-find-search  .chosen-container-single .chosen-single:after {position:absolute; left:12px; top:0; content: "\ea04"; font-family: "icomoon"; color:#aeaeae; font-size:15px;}
+.wp-smartstudy .cs-input-area {margin:0 0 22px;}
+.wp-smartstudy .cs-find-search  .chosen-container-single .chosen-single:after {content: "\e313"; right:10px; left:auto; top: 2px; font-size: 18px;}
+.wp-smartstudy .cs-find-search .cs-input-area .chosen-search input {height:30px; margin:0;}
+.wp-smartstudy .cs-find-search .chosen-container-single .chosen-single span {font-size:12px; font-weight:600;}
+.wp-smartstudy .cs-find-search .chosen-container .chosen-drop {border:none; box-shadow:none; border-radius:0;}
+.wp-smartstudy .cs-suggestions-list {width:80%; float:left; margin: 0;}
+.wp-smartstudy .cs-suggestions-list li {list-style:none; font-size:12px; color: #fff; line-height: normal; font-family: 'Montserrat', sans-serif; margin: 0 0 8px; letter-spacing:0;}
+.wp-smartstudy .cs-suggestions-list li i {color: #676d76; font-size: 16px; vertical-align: middle; margin:0 5px 0 0;}
+.wp-smartstudy .cs-find-search button {border:none; width:45px; height:45px; background:#ffae00; text-align:center; line-height: 45px; color:#fff; border-radius:3px; float:right;}
+/* Find Search Style End */
+.wp-smartstudy .widget .cs-price{display: block; margin-bottom: 20px;}
+.wp-smartstudy .widget .cs-price span{font-size: 18px; color: #333; font-weight: bold;}
+.wp-smartstudy .widget .cs-price span em, .wp-smartstudy .widget .cs-price span del{color: #aaa; font-size: 12px; font-weight: normal; font-style: normal; display: inline-block;}
+.wp-smartstudy .widget .cs-price span em{padding-right: 5px;}
+.wp-smartstudy .widget .cs-price span del{padding-left: 5px;}
+.wp-smartstudy .widget.cs-widget-links .cs-button{display: block; text-transform: uppercase; text-decoration:none; outline:none; font-weight: bold; color: #fff; text-align: center; height: 42px; line-height: 42px; margin-bottom: 30px;}
+/* Cs Listing Filters Style Start */
+.wp-smartstudy .cs-listing-filters a{text-decoration: none; outline: none;}
+.wp-smartstudy .cs-listing-filters ul.cs-checkbox-list{height: 200px; padding: 10px 0 15px 0;}
+.wp-smartstudy .cs-listing-filters .mCSB_scrollTools .mCSB_draggerRail{background-color: #f9fafa;}
+.wp-smartstudy .cs-listing-filters ul{margin: 0px; padding: 10px 0 15px 0;}
+.wp-smartstudy .cs-listing-filters .panel-group .panel + .panel{margin-top: 0px;}
+.wp-smartstudy .cs-listing-filters ul li{list-style: none; display: inline-block; width: 100%; padding-bottom: 5px;}
+.wp-smartstudy .cs-listing-filters .panel-title a{text-transform: uppercase; font-weight: bold; position: relative; display: block;}
+.wp-smartstudy .cs-listing-filters .panel{box-shadow: none; border:none; border-radius:0px;  border-bottom: 1px solid #ebebec; margin-bottom: 12px;}
+.wp-smartstudy .cs-listing-filters .panel-default > .panel-heading{background-image: none; background-color: #fff; border:none; padding:0px 0 10px;}
+.wp-smartstudy .cs-listing-filters .panel-heading{border:none; border-radius: 0px;}
+.wp-smartstudy .cs-listing-filters .panel-default > .panel-heading + .panel-collapse > .panel-body{border:none; padding: 0px;}
+.wp-smartstudy .cs-listing-filters li .checkbox{margin: 0px; padding: 0px; line-height: 20px;}
+.wp-smartstudy .cs-listing-filters li .checkbox label{margin-bottom: 0px; position: relative;  padding-left: 25px; font-size: 12px; color: #555; font-weight: 400;}
+.wp-smartstudy .cs-listing-filters li input[type="checkbox"]{display: none;}
+.wp-smartstudy .cs-listing-filters li .checkbox label:before{content: ""; position: absolute; left: 0px; top:5px; width: 12px; height: 12px; border-radius: 1px; border:1px solid #e7eaee;}
+.wp-smartstudy .cs-listing-filters li input[type="checkbox"]:checked + label:after{content: "\e5ca"; position: absolute; left: 0px; top: 5px; font-family: "icomoon" !important; font-size: 12px; color: #fff; border-radius: 2px; width: 12px; height: 12px; line-height: 11px; }
+.wp-smartstudy .cs-listing-filters .panel-title a:before{ content: "\e945"; position: absolute; right: 0px; top: 0; font-size: 16px; color: #cbcbcb; font-family: "icomoon" !important;}
+.wp-smartstudy .cs-listing-filters .panel-title a.collapsed:before{content: "\e947"; position: absolute; right: 0px; top: 0; font-size: 16px; color: #cbcbcb; font-family: "icomoon" !important;}
+.wp-smartstudy .cs-listing-filters  .cs-values{float: right;}
+/* Cs Listing Filters Style End */
+/* Recent Blog Style */
+.wp-smartstudy .widget {margin:0 0 30px;}
+.wp-smartstudy .widget-recent-blog ul {margin:0; padding:0;}
+.wp-smartstudy .widget-recent-blog li {list-style:none; margin:0 0 30px;}
+.wp-smartstudy .widget-recent-blog li:last-child {margin-bottom:0;}
+.wp-smartstudy .widget-recent-blog .cs-media {float:left;}
+.wp-smartstudy .widget-recent-blog .cs-text {overflow:hidden; font-family: 'Montserrat', sans-serif;}
+.wp-smartstudy .widget-recent-blog .cs-media ~ .cs-text {padding:0 0 0 20px;}
+.wp-smartstudy .widget-recent-blog .cs-text span {display:block; margin:0 0 5px; line-height:normal; color:#333;}
+.wp-smartstudy .widget-recent-blog .widget-post-title a {display: block; font-size: 12px; color:#333; letter-spacing: 0; line-height: 16px; text-decoration:none; outline:none;}
+.wp-smartstudy .widget-recent-blog .cs-text em {font-size:10px; color:#aaa; font-style:normal;}
+.wp-smartstudy .widget-recent-blog .cs-text span.free {color:#81c483; text-transform:uppercase;}
+/* Recent Blog Style End */
+/* Scroll Bar Style Start */
+.wp-smartstudy .mCustomScrollbar{ -ms-touch-action: pinch-zoom; touch-action: pinch-zoom; }
+.wp-smartstudy .mCustomScrollbar.mCS_no_scrollbar, .mCustomScrollbar.mCS_touch_action{ -ms-touch-action: auto; touch-action: auto; }
+.wp-smartstudy .mCustomScrollBox{position: relative;overflow: hidden;height: 100%;max-width: 100%;outline: none;direction: ltr;	}
+.wp-smartstudy .mCSB_container{	overflow: hidden;width: auto;height: auto;}
+.wp-smartstudy .mCSB_inside > .mCSB_container{ margin-right: 20px; }
+.wp-smartstudy .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-right: 0; }
+.wp-smartstudy .mCS-dir-rtl > .mCSB_inside > .mCSB_container{ margin-right: 0;	margin-left: 30px;	}
+.wp-smartstudy .mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-left: 0; } 
+.wp-smartstudy .mCSB_scrollTools{position: absolute;width: 16px;height: auto;left: auto;top: 0;right: 0;bottom: 0;}
+.wp-smartstudy .mCSB_outside + .mCSB_scrollTools{ right: -26px; } 
+.wp-smartstudy .mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools, .wp-smartstudy .mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools{right: auto;left: 0;}
+.wp-smartstudy .mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools{ left: -26px; }
+.wp-smartstudy .mCSB_scrollTools .mCSB_draggerContainer{position: absolute;top: 0;left: 0;bottom: 0;right: 0; height: auto;}
+.wp-smartstudy .mCSB_scrollTools a + .mCSB_draggerContainer{ margin: 20px 0; }
+.wp-smartstudy .mCSB_scrollTools .mCSB_draggerRail{width: 5px;	height: 100%;	margin: 0 auto;	-webkit-border-radius: 16px; -moz-border-radius: 16px; border-radius: 16px;	}
+.wp-smartstudy .mCSB_scrollTools .mCSB_dragger{	cursor: pointer;width: 100%;height: 30px; z-index: 1;}
+.wp-smartstudy .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{position: relative;width: 4px;	height: 100%;margin: 0 auto;-webkit-border-radius: 16px; -moz-border-radius: 16px; border-radius: 16px;	text-align: center;}	
+.wp-smartstudy .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar, 
+.wp-smartstudy .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar{ width: 12px; }
+.wp-smartstudy .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail, 
+.wp-smartstudy .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail{ width: 8px; }
+.wp-smartstudy .mCSB_scrollTools .mCSB_buttonUp,
+.wp-smartstudy .mCSB_scrollTools .mCSB_buttonDown{display: block;position: absolute;height: 20px;width: 100%;overflow: hidden;margin: 0 auto;cursor: pointer;}
+.wp-smartstudy .mCSB_scrollTools .mCSB_buttonDown{ bottom: 0; }
+.wp-smartstudy .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ background-color: #c6c6c6; width: 5px;}
+.wp-smartstudy .mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.wp-smartstudy .mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(0,0,0,0.9); }
+.wp-smartstudy .mCS-dark.mCSB_scrollTools .mCSB_buttonUp{ background-position: -80px 0; }
+.wp-smartstudy .mCS-dark.mCSB_scrollTools .mCSB_buttonDown{ background-position: -80px -20px; }
+.wp-smartstudy .mCS-dark.mCSB_scrollTools .mCSB_buttonLeft{ background-position: -80px -40px; }
+.wp-smartstudy .mCS-dark.mCSB_scrollTools .mCSB_buttonRight{ background-position: -80px -56px; }
+/* Scroll Bar Style End */
+
+/* User Account Setting Style Start */
+/* User Sidebar Style Start */
+.wp-smartstudy .cs-user-sidebar{ border-right:1px solid #f4f4f4; background:#fcfcfc; margin: 0 37px -99999px -10016px; padding: 70px 65px 99999px 10016px;}
+.wp-smartstudy .cs-user-sidebar:aftrt{ clear:both; content:''; display:block;}
+/* Profile Button Style Start */
+.wp-smartstudy .cs-profile-pic {margin: 0 0 40px 0;padding: 0 0 0 0;}
+.wp-smartstudy .cs-profile-pic:after{ clear:both; content:''; display:block;}
+.wp-smartstudy .profile-pic { float:left; }
+.wp-smartstudy .profile-pic figure {border-radius: 100%;height: 100px;overflow: hidden;width: 100px;}
+.wp-smartstudy .profile-pic figure img {height: auto;width: 100%;}
+.wp-smartstudy .cs-browse-holder { padding-top: 9px; margin-left:20px; float:left; }
+.wp-smartstudy .cs-browse-holder em {color: #333;display: block;font-size: 12px;font-style: normal; margin-bottom: 13px;font-weight: 700; font-family: 'Montserrat', sans-serif; text-transform:uppercase;}
+.wp-smartstudy .cs-profile-pic .btn-file {border: solid 1px #f8f8f8;border-radius: 3px;box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.1);color: #aaa; cursor: pointer;font-size: 10px;overflow: hidden;padding: 12px;position: relative;text-transform: uppercase;webkit-box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.1); font-weight:700; letter-spacing:2px; background:#fff;}
+.wp-smartstudy .cs-profile-pic .btn-file input[type=file] {background: red;cursor: inherit;display: block;filter: alpha(opacity=0);font-size: 100px;height: 35px;left: 0;opacity: 0;position: absolute;text-align: right;top: 0;width: 100%;}
+/* Profile Upload Button Style End */
+/* User Account list Style Start */
+.wp-smartstudy .cs-usser-account-list{ margin:0 0 40px 0; padding:0;}
+.wp-smartstudy .cs-usser-account-list ul { margin:0; padding:0;}
+.wp-smartstudy .cs-usser-account-list ul li{ padding:0 0; margin:0; list-style:none; border-top:1px solid #f1f1f2;}
+.wp-smartstudy .cs-usser-account-list ul li a{ outline:none; text-decoration:none; text-transform:uppercase; font-size:13px; line-height:44px; color:#555; font-weight:700; font-family: 'Montserrat', sans-serif; display:block; position:relative; margin:0; padding:4px 0;}
+.wp-smartstudy .cs-usser-account-list ul li a:after{ content:'\f178';font-family:'icomoon';position:absolute; right:40px;top:41%;font-size:11px;line-height:15px; visibility:hidden; opacity:0;}
+.wp-smartstudy .cs-usser-account-list ul li:hover a:after,
+.wp-smartstudy .cs-usser-account-list ul li.active a:after{ opacity:1; visibility:visible; right:0;}
+.wp-smartstudy .cs-usser-account-list ul li a i{ display:inline-block; font-size:14px; vertical-align:middle; margin:-3px 17px 0 0;}
+.wp-smartstudy .cs-logout{border-top:1px solid #f1f1f2; outline:none; text-decoration:none; text-transform:uppercase; font-size:13px; line-height:44px; color:#555; font-weight:700; font-family: 'Montserrat', sans-serif; display:block; position:relative; margin:0; padding:4px 0;}
+.wp-smartstudy .cs-logout i{ display:inline-block; font-size:14px; vertical-align:middle; margin:-3px 17px 0 0;}
+.wp-smartstudy .cs-logout:after{ content:'\f178'; font-family:'icomoon'; position:absolute; right:40px; top:41%; font-size:11px; line-height:15px; visibility:hidden; opacity:0;}
+.wp-smartstudy .cs-logout:hover:after{ opacity:1; visibility:visible; right:0;}
+/* User Account list Style End */
+/* User Sidebar Style End */
+/* User Content Style Start */
+.wp-smartstudy .cs-user-content{ padding:36px 0 50px 0px; margin:0 0 0 0;}
+.wp-smartstudy .cs-user-content .cs-section-title h2{ margin-bottom:20px;}
+.wp-smartstudy .cs-user-content .cs-field-holder { margin-bottom: 15px; }
+.wp-smartstudy .cs-user-content .cs-field-holder h6{ text-transform:uppercase !important; font-size:12px !important;}
+.wp-smartstudy .cs-user-content .cs-field-holder label {font-size: 12px;letter-spacing:1px;text-transform: uppercase;font-family: 'Open Sans', sans-serif; margin: 0 0 5px 0;padding: 0;cursor: pointer; font-weight:600;}
+.wp-smartstudy .cs-user-content .cs-field-holder .cs-field { position: relative; }
+.wp-smartstudy .cs-user-content .cs-field-holder .cs-field input[type=text] {height: 45px;width: 100%;background-color:#fcfcfc; border: 1px solid #f6f6f6;color: #666;font-size: 13px;line-height: 16px;padding: 10px 12px;border-radius: 2px;}
+.wp-smartstudy .cs-user-content .cs-field-holder .cs-field.has-error span {bottom: -24px;color: #f16060;font-size: 10px;left: 0;position: absolute;}
+.wp-smartstudy .cs-user-content .cs-field-holder .cs-field.has-error input[type=text] {border: 1px solid #f16060;position: relative;}
+.wp-smartstudy .cs-user-content .cs-field-holder .cs-field.has-error .chosen-container-single .chosen-single {border: 1px solid #f16060;position: relative;}
+.wp-smartstudy .cs-user-content .cs-field-holder .cs-field.has-error .chosen-container .chosen-drop {border: 1px solid #f16060;border-top: 0;}
+.wp-smartstudy .cs-user-content .cs-field-holder .cs-field.has-error:after {content: '\f071';position: absolute;right: -25px;top: 8px;font-size: 17px;color: #f16060;font-family: 'icomoon';}
+.wp-smartstudy .cs-user-content .cs-field-holder textarea {width: 100%;background: #fcfcfc;border: 1px solid #f6f6f6;color: #666;font-size: 13px;line-height: 16px;padding: 10px 12px;height: 125px;}
+/* User Chosen Style Start */
+.wp-smartstudy .cs-user-content .cs-field-holder .chosen-container-single .chosen-single {height: 43px;width: 100%;text-transform: none;background-color: #fcfcfc ;border: 1px solid #f6f6f6;color: #666;font-size: 13px;	line-height: 20px;padding: 10px 12px;border-radius: 0;box-shadow: none;margin: 0;}
+.wp-smartstudy .cs-user-content .cs-field-holder .chosen-container-single .chosen-single div b {background: none;position: relative;}
+.wp-smartstudy .cs-user-content .cs-field-holder .chosen-container-single .chosen-single div b:after {position: absolute;content: '\e94c';font-family: 'icomoon';right: 11px;top: 11px;color: #b6b6b6;font-size: 15px;}
+.wp-smartstudy .cs-user-content .cs-field-holder .chosen-container .chosen-drop {background: #fcfcfc;box-shadow: none;border: 1px solid #f6f6f6;border-top: 0;padding: 0 10px;}
+.wp-smartstudy .cs-user-content .cs-field-holder .chosen-container .chosen-drop .chosen-search input[type=text]{background-color:#fff; border:1px solid #aaa; border-radius: 0;font-family: sans-serif;font-size: 1em;height: auto;line-height: normal;margin: 1px 0;outline: 0 none;padding: 4px 20px 4px 5px;width: 100%;}
+.wp-smartstudy .cs-user-content .cs-field-holder .chosen-container .chosen-results li {padding: 8px 6px;margin-bottom: 1px;}
+.wp-smartstudy .cs-user-content .cs-field-holder .chosen-container .chosen-results li.active-result.result-selected { color: #fff; }
+/* User Chosen Style End */
+/* User Switch Style Start */
+.wp-smartstudy .cs-user-content .cs-switch-holder {background: #f4f4f4;border-radius: 4px;padding:18px 22px 14px;}
+.wp-smartstudy .cs-user-content .material-switch {float: left;margin: 0 15px 0 0;}
+.wp-smartstudy .cs-user-content .material-switch > input[type="checkbox"] { display: none; }
+.wp-smartstudy .cs-user-content .material-switch > label {cursor: pointer;height: 0px;position: relative;width: 40px;}
+.wp-smartstudy .cs-user-content .material-switch > label::before {background: rgb(0, 0, 0);box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);border-radius: 10px;content: '';height: 20px;margin-top: -10px;position: absolute;opacity: 0.3;transition: all 0.4s ease-in-out;width: 40px;}
+.wp-smartstudy .cs-user-content .material-switch > label::after {background: rgb(255, 255, 255);border-radius: 16px;box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);content: '';height: 24px;left: -4px;margin-top: -8px;	position: absolute;top: -4px;transition: all 0.3s ease-in-out;width: 24px;}
+.wp-smartstudy .cs-user-content .material-switch > input[type="checkbox"]:checked + label::before {background: #207dba;box-shadow: none;opacity: 1;}
+.wp-smartstudy .cs-user-content .material-switch > input[type="checkbox"]:checked + label::after {background: #fff;left: 20px;}
+/* User Switch Style End */
+.wp-smartstudy .cs-user-content .cs-seprator {border-bottom: 2px solid #efefef;width: 100%;padding: 15px 0 0 0;margin-bottom: 25px;display: block;}
+.wp-smartstudy .cs-user-content .cs-field a i { color: #aaa; position: absolute;right: 20px;height: 20px;width: 20px;border-radius: 2px;font-size: 14px;text-align: center;line-height: 17px;-moz-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out; top:12px;}
+.wp-smartstudy .cs-user-content .cs-field a:hover i {transform: rotate(360deg);border-radius: 50%;}
+.wp-smartstudy .cs-user-content .cs-field a:hover:after { left: 0; }
+.wp-smartstudy .cs-user-content .cs-field a:hover[data-original-title="Facebook"] i {color: #2a4a8f;}
+.wp-smartstudy .cs-user-content .cs-field a:hover[data-original-title="Twitter"] i {color: #55acee;}
+.wp-smartstudy .cs-user-content .cs-field a:hover[data-original-title="Linkedin"] i {color: #0070b1;}
+.wp-smartstudy .cs-user-content .cs-field .cs-btn-submit {color: #fff;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;position: relative;z-index: 1; margin-top:15px;}
+.wp-smartstudy .cs-user-content .cs-field .cs-btn-submit input[type=submit] {-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;height: 43px;width: 100%;font-size: 13px;line-height: 16px;padding: 10px 12px;border-radius: 3px;text-align: center;color: #fff !important;border: 0;text-transform: uppercase;font-weight: 700;background: none;cursor: pointer;position: relative;z-index: 5;}
+.wp-smartstudy .cs-user-content .cs-field .cs-btn-submit input[type=submit] {text-decoration: none;display: block;}
+.wp-smartstudy .cs-user-content .cs-field .cs-btn-submit:before {content: '';position: absolute;bottom: 0;left: 0;width: 100%;height: 100%;z-index: 1;opacity: 0;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;border-top-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-bottom-style: solid;border-top-color: #207dba;border-bottom-color: #207dba;-webkit-transform: scale(0.1, 1);transform: scale(0.1, 1);pointer-events: none;}
+.wp-smartstudy .cs-user-content .cs-field .cs-btn-submit:hover input[type=submit] {letter-spacing: 2px;color: #207dba !important;}
+.wp-smartstudy .cs-user-content .cs-field .cs-btn-submit:hover::before {opacity: 1;-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+.wp-smartstudy .cs-user-content .cs-field .cs-btn-submit:after {content: '';position: absolute;bottom: 0;left: 0;width: 100%;height: 100%;z-index: 1;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;	-o-transition: all 0.3s;transition: all 0.3s;background-color: #207dba;pointer-events: none;color: fff;border-radius: 3px;}
+.wp-smartstudy .cs-user-content .cs-field .cs-btn-submit:hover:after {opacity: 0;-webkit-transform: scale(0.1, 1);transform: scale(0.1, 1);}
+/* User Content Style End */
+/* User Account Setting Style End */
+/* User Short Listed Style Start */
+.wp-smartstudy .cs-user-content ul.cs-shortlisted{margin: 0px 15px 50px 15px; padding: 0px;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li:first-child{ border-top: 2px solid #f5f6f7; padding-top:40px}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li{list-style: none; padding: 30px 0 30px 0; margin: 0px; border-bottom: 1px solid #f5f6f7; position: relative;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-media{float: left; margin-right: 30px; width:118px;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-media img{ width:100%;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text{overflow: hidden; padding:1px 0 0 0;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text h5{ margin-bottom:3px;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text h5 a{ text-decoration:none; margin:0; padding:0; outline:none; font-weight:400 !important;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text .cs-rating{display:block; margin-bottom:2px;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text .rating-star{display: inline-block; width: 82px; vertical-align: middle;position: relative; height: 20px; line-height: 19px;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text .rating-star:before, 
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text .rating-box:before{color: rgba(0, 0, 0, 0.4); content: "\f005 \f005\f005\f005\f005";font-family: "icomoon"; font-size:16px; left: 0; letter-spacing: 1px; position: absolute; top: -2px;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text .cs-rating em{ font-size:12px; font-style:normal; color:#aaa; display:inline-block; vertical-align:top;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text .rating-box:before{color: #fea21f; content: "\f005 \f005\f005\f005\f005";}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text .rating-box{ height: 20px; left: 0; overflow: hidden; position: absolute;top: 0;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text .cs-user-name{ font-weight:700; font-family: 'Montserrat', sans-serif; font-size:12px;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-text .cs-user-name em{ font-style:normal; padding:0; color:#aaa;}
+.wp-smartstudy .cs-user-content ul.cs-shortlisted li .cs-remove-btn{text-decoration:none; font-size: 10px; font-weight: bold; text-transform: uppercase; color: #fff; display: inline-block; line-height: 22px; padding: 0 12px; border-radius: 3px; letter-spacing: 1px; position: absolute; right: 0px; top: 50%; margin-top: -10px; background:#808080;}
+/* User Short Listed Style End */
+/* User Statements Style Start */
+.wp-smartstudy .cs-user-statements ul{margin:0 0 20px 0; font-family: 'Montserrat', sans-serif; }
+.wp-smartstudy .cs-user-statements li{list-style:none; margin:0; padding:0; }
+.wp-smartstudy .cs-user-statements .cs-statements-label{border-bottom:3px solid #f5f6f7; padding:10px 0; }
+.wp-smartstudy .cs-user-statements .cs-statements-label ul{ margin:0; padding:0;}
+.wp-smartstudy .cs-user-statements .cs-statements-label li{color:#aaa; display:inline-block; font-size:12px; text-transform:uppercase; margin:0; padding:0; }
+.wp-smartstudy .cs-user-statements .cs-statements-label li:first-child{padding:0; width:52%; }
+.wp-smartstudy .cs-user-statements .cs-statements-label li:nth-child(2){width:18%; }
+.wp-smartstudy .cs-user-statements .cs-statements-label li:nth-child(3){width:18%; }
+.wp-smartstudy .cs-user-statements .cs-statements-label li:last-child{ width:10%; }
+.wp-smartstudy .cs-user-statements .cs-statements-content{ padding:15px 0; border-bottom:1px solid #f5f6f7; }
+.wp-smartstudy .cs-user-statements .cs-statements-content ul{ margin:0;}
+.wp-smartstudy .cs-user-statements .cs-statements-content li em{ font-style:normal; color:#6ac617;}
+.wp-smartstudy .cs-user-statements .cs-statements-content li{ color:#aaa; display:inline-block; font-size:12px; text-transform:none; margin:0; padding:0; vertical-align:middle; }
+.wp-smartstudy .cs-user-statements .cs-statements-content li:nth-child(1){width:52%; padding:0 0 0 30px; }
+.wp-smartstudy .cs-user-statements .cs-statements-content li:nth-child(1) span{ font-size:14px; color:#333; display:inline-block; vertical-align:middle; position:relative;}
+.wp-smartstudy .cs-user-statements .cs-statements-content li:nth-child(1) span:after{ content:''; position:absolute; left:-29px; top:2px; width:11px; height:22px; background:#0bbc95; border-radius:3px;}
+.wp-smartstudy .cs-user-statements .cs-statements-content.cs-statement-highlights li:nth-child(1) span:after{background:#fc7756;}
+.wp-smartstudy .cs-user-statements .cs-statements-content li:nth-child(2){width:18%; }
+.wp-smartstudy .cs-user-statements .cs-statements-content li:nth-child(3){width:18%; }
+.wp-smartstudy .cs-user-statements .cs-statements-content li:last-child{ width:10%; color:#333; }
+/* User Statements Style End */
+/* User Courses Style Start */
+.wp-smartstudy .cs-user-courses ul{margin:0 0 20px 0; font-family: 'Montserrat', sans-serif; }
+.wp-smartstudy .cs-user-courses li{list-style:none; margin:0; padding:0; }
+.wp-smartstudy .cs-user-courses .cs-courses-label{border-bottom:3px solid #f5f6f7; padding:10px 0; }
+.wp-smartstudy .cs-user-courses .cs-courses-label ul{ margin:0; padding:0;}
+.wp-smartstudy .cs-user-courses .cs-courses-label li{color:#aaa; display:inline-block; font-size:12px; text-transform:uppercase; margin:0; padding:0; }
+.wp-smartstudy .cs-user-courses .cs-courses-label li:first-child{padding:0; width:70%; }
+.wp-smartstudy .cs-user-courses .cs-courses-label li:nth-child(2){width:18%; }
+.wp-smartstudy .cs-user-courses .cs-courses-label li:last-child{ width:10%; }
+.wp-smartstudy .cs-user-courses .cs-courses-label li:last-child i{ color:#f8ab47; display:inline-block; padding:0 5px 0 0;}
+.wp-smartstudy .cs-user-courses .cs-courses-content{ padding:15px 0; border-bottom:1px solid #f5f6f7; }
+.wp-smartstudy .cs-user-courses .cs-courses-content ul{ margin:0;}
+.wp-smartstudy .cs-user-courses .cs-courses-content li{ color:#aaa; display:inline-block; font-size:12px; text-transform:none; margin:0; padding:0; vertical-align:middle; }
+.wp-smartstudy .cs-user-courses .cs-courses-content li:nth-child(1){width:70%; padding:0 0 0 0; }
+.wp-smartstudy .cs-user-courses .cs-courses-content li:nth-child(1) span{font-size:14px; color:#333; display:inline-block; vertical-align:middle; position:relative;}
+.wp-smartstudy .cs-user-courses .cs-courses-content li:nth-child(1) span a{font-size:14px; color:#333; display:inline-block; text-decoration:none;}
+.wp-smartstudy .cs-user-courses .cs-courses-content li:nth-child(1) span em{ font-style: normal; color:#aaa; display:inline-block; font-size:12px;}
+.wp-smartstudy .cs-user-courses .cs-courses-content li:nth-child(2){width:18%; }
+.wp-smartstudy .cs-user-courses .cs-courses-content li:last-child{ width:10%; color:#333; }
+/* User Courses Style End */
+/* User Detail Style Start */
+.wp-smartstudy .cs-user-detail{}
+.wp-smartstudy .cs-user-detail .cs-author-info-list li {margin: 0 0 0 15px; padding: 0 0 0 15px;}
+/* User Detail Style End */
+/* Instructor Page Style Start */
+.wp-smartstudy .cs-instructor .cs-courses.courses-listing .cs-price-sec { padding-left: 20px;text-align: center;width: 30%;}
+.wp-smartstudy .cs-instructor .cs-courses.courses-listing .cs-post-title{ float:left;}
+.wp-smartstudy .cs-instructor .cs-courses.courses-listing .cs-post-title h4{ margin-bottom:10px;}
+.wp-smartstudy .cs-instructor .cs-courses P {float: left;width: 100%;}
+/* Instructor Page Style End */
+/* Page Title Style Start */
+.wp-smartstudy .cs-page-title.center{ text-align:center;}
+.wp-smartstudy .cs-page-title.right{ text-align:right;}
+.wp-smartstudy .cs-page-title h1{ margin-bottom:10px;}
+.wp-smartstudy .cs-page-title p{ font-size:16px !important; font-family: 'Montserrat', sans-serif;}
+/* Page Title Style End */
+/* Quote Style */
+.cs-quote-sec{position:relative; margin:0 0 50px;}
+.cs-quote-sec:before {position:absolute; right:15px; bottom:95px; font-size:250px; color:rgba(40,40,40,0.05); content:"\eb6a"; font-family: "icomoon";}
+.wp-smartstudy blockquote {border-left: none; font-size: 16px; margin: 0 0 20px; padding: 50px 120px; background-color:#f9f9f9;}
+.wp-smartstudy blockquote p {margin:0 0 20px; font-size:16px !important; position:relative;}
+.wp-smartstudy blockquote p:before {content: ",,"; font-size: 140px; left: -70px; letter-spacing: -10px; position: absolute; top: 66px; transform: scale(-1); -moz-transform: scale(-1); -ms-transform: scale(-1); -o-transform: scale(-1); -webkit-transform: scale(-1);}
+/* Quote Style End */
+/* Team Style */
+.wp-smartstudy .cs-team.listing {margin:0 0 60px;}
+.wp-smartstudy .cs-team.listing .cs-media {display:inline-block; vertical-align:middle; margin:0 -4px 0 0; width:22%;}
+.wp-smartstudy .cs-team.listing .cs-media img {width:100%;}
+.wp-smartstudy .cs-team.listing .cs-media ~ .cs-text {padding:0 0 0 30px; width:78%;}
+.wp-smartstudy .cs-team.listing .cs-text {display:inline-block; vertical-align:middle; margin:0 -4px 0 0; width:100%;}
+.wp-smartstudy .cs-team .cs-text h5 {margin:0 0 5px;}
+.wp-smartstudy .cs-team .cs-text h5 a {text-decoration:none; outline:none; text-transform:uppercase !important; font-weight:400 !important;}
+.wp-smartstudy .cs-team .cs-text p {margin:0 0 15px; letter-spacing: 0}
+.wp-smartstudy .cs-team .cs-text span {font-size:13px; color:#aaa; display:block; margin:0 0 5px;}
+.wp-smartstudy .cs-social-media ul {margin:0; padding:0;}
+.wp-smartstudy .cs-social-media li {list-style:none; display:inline-block;}
+.wp-smartstudy .cs-social-media li a{text-decoration:none; outline:none; width:24px; height:24px; display:inline-block; text-align:center; line-height:24px; color:#fff;}
+.wp-smartstudy .cs-social-media li a[data-original-title="facebook"]{background-color:#5d82d1;}
+.wp-smartstudy .cs-social-media li a[data-original-title="pinterest"]{background-color:#e13138;}
+.wp-smartstudy .cs-social-media li a[data-original-title="twitter"]{background-color:#40bff5;}
+.wp-smartstudy .cs-social-media li a[data-original-title="google"]{background-color:#eb5e4c;}
+/* Team Style End */
+/* Team Grid Style Start */
+.wp-smartstudy .cs-team.grid {margin:0 0 60px;}
+.wp-smartstudy .cs-team.grid .cs-media {display:block;margin-bottom:22px;}
+.wp-smartstudy .cs-team.grid .cs-media img {width:100%;}
+.wp-smartstudy .cs-team.grid .cs-text h5 a{color:#333333 !important;}
+/* Team Grid Style End */
+/* Text Widget Style */
+.wp-smartstudy .cs-text-widget .cs-text {background-color:#f8f8f8; padding:20px 20px 25px;}
+.wp-smartstudy .cs-text-widget .cs-text p {font-size:13px; color:#808080 !important; letter-spacing: 0;}
+.wp-smartstudy .cs-text-widget .cs-text a {border-radius: 3px; color: #fff; font-size: 11px; font-weight: 700; padding:5px 20px 8px; display:inline-block; text-decoration:none; outline:none;}
+.wp-smartstudy .cs-text-widget .cs-text a i{font-size:16px;position:relative;top:3px;}
+/* Text Widget Style End */
+/* Detail Form Style */
+.wp-smartstudy .cs-media ~ .cs-detail-form {margin:30px 0 30px 0;}
+.wp-smartstudy .cs-detail-form {border:1px solid #ebebec; display:inline-block; padding:20px; border-radius:3px; margin:0 0 30px; width: 100%;}
+.wp-smartstudy .cs-detail-form h6 {text-transform:uppercase !important; margin:0 0 5px;}
+.wp-smartstudy .cs-detail-form span {line-height:22px; display:block; font-weight:300; margin:0 0 20px;}
+.wp-smartstudy .cs-detail-form input,
+.wp-smartstudy .cs-detail-form textarea {height:39px; border-color:#f3f3f3; border-radius:3px; margin:0 0 15px;}
+.wp-smartstudy .cs-detail-form textarea {height:105px; margin:0 0 20px;}
+.wp-smartstudy .cs-detail-form input[type="submit"] {font-size:11px; color: #fff; font-weight:700; height:auto; border:none; display:inline-block; margin:0; padding: 11px 35px 12px; text-transform: uppercase; line-height:normal;}
+/* Detail Form Style End */
+
+.wp-smartstudy .cs-author-info {border-bottom:1px solid #eee; padding:0 0 20px; margin:0 0 30px;}
+.wp-smartstudy .cs-author-info .alignleft,
+.wp-smartstudy .cs-author-info .alignright {width:50%; display:inline-block; vertical-align:middle; margin: 0 -4px 0 0;}
+.wp-smartstudy .cs-author-info .alignright {text-align:right;}
+.wp-smartstudy .cs-author-info h3 {text-transform:uppercase !important; margin:0 0 5px;}
+.wp-smartstudy .cs-author-info span {font-size:13px; color:#aaa; text-transform:uppercase; display:block;}
+.wp-smartstudy .cs-author-info .cs-social-media {margin:0 15px 0 0;}
+.wp-smartstudy .cs-author-info .cs-social-media, .cs-author-info .share-btn, .cs-author-info .cs-next-prev-btn {display:inline-block; vertical-align:middle;}
+.wp-smartstudy .cs-author-info .share-btn {margin:0 15px 0 0; border: 1px solid #e0e0e0; padding:2px 12px; font-size:11px; text-transform:uppercase; font-weight:700; color:#555; text-decoration:none; outline:none; border-radius:3px;}
+.wp-smartstudy .cs-author-info .share-btn i {margin:0 5px 0 0;}
+.wp-smartstudy .cs-next-prev-btn a {border: 1px solid #e0e0e0; color: #d6d6d6; display: inline-block; font-size: 12px; line-height: normal; margin: 0 -6px 0 0; padding: 6px 15px; text-decoration:none; outline: none;}
+.wp-smartstudy .cs-next-prev-btn a.prev {border-radius:3px 0 0 3px;}
+.wp-smartstudy .cs-next-prev-btn a.next {border-radius:0 3px 3px 0;}
+
+/* Author Info List */
+.wp-smartstudy .cs-author-info-list ul {margin:14px 0 40px; padding:0;}
+.wp-smartstudy .cs-author-info-list li {list-style:none; border-left: 1px solid #eee; padding:0 0 0 30px; margin:0 0 0 30px; display:inline-block;}
+.wp-smartstudy .cs-author-info-list li:first-child {border-left:none; margin-left:0; padding-left:0;}
+.wp-smartstudy .cs-author-info-list li i {float: left; margin: 3px 10px 0 0; width: 15px;font-size:17px;}
+.wp-smartstudy .cs-author-info-list li span {float: left; font-weight: 700; line-height: normal;}
+.wp-smartstudy .cs-author-info-list li span a {display: block; font-weight: 400; line-height: normal; text-decoration:none; outline:none; color:#555;}
+.wp-smartstudy .cs-author-info-list li span em {display:block; font-weight:400; font-style:normal; line-height:normal; padding: 5px 0 0;}
+/* Author Info List End */
+
+.wp-smartstudy .cs-team-detail .rich_editor_text strong {letter-spacing:0; display:block; margin: 0 0 20px;}
+.wp-smartstudy .cs-team-detail .rich_editor_text p {letter-spacing:0; margin:0 0 30px;}
+.wp-smartstudy .cs-team-detail .rich_editor_text h5 {text-transform:uppercase !important; margin:0 0 15px;}
+
+/* Icon List Style */
+.wp-smartstudy .cs-icon-list {margin:0 0 40px 0; padding:0;}
+.wp-smartstudy .cs-icon-list li {list-style:none; color:#777; letter-spacing: 0; line-height: normal; margin: 0 0 15px;}
+.wp-smartstudy .cs-icon-list li i {font-size:10px; margin:0 15px 0 0;}
+/* Icon List Style End */
+
+/* Team Detail Style End */
+/* services style start*/
+.wp-smartstudy .cs-services.left{margin-bottom:35px;}
+.wp-smartstudy .cs-services.left .cs-media{ float:left;}
+.wp-smartstudy .cs-services.left .cs-media i{ font-size:35px; margin-right:20px;}	
+.wp-smartstudy .cs-services.left .cs-text{ overflow:hidden;}
+.wp-smartstudy .cs-fancy-heading{ text-align:center; margin-bottom:0; overflow:hidden;}
+.wp-smartstudy .cs-fancy-heading h6{font-size:12px !important; color:#656565 !important; position:relative; display:inline-block;}
+.wp-smartstudy .cs-fancy-heading h6:before{position:absolute;height:1px;left:100%;width:9999px;top:10px;background:#eeeeee;content:''; margin-left:10px;}
+.wp-smartstudy .cs-fancy-heading h6:after{position:absolute;height:1px;right:100%;width:9999px;top:10px;background:#eeeeee;content:'';margin-right:10px;}
+/* services style End*/
+/* slider style start*/
+.wp-smartstudy .cs-graduate-slider{ margin:0 0 40px 0; padding:0; overflow:hidden; cursor:move;}
+.wp-smartstudy .cs-graduate-slider li{list-style:none; display:inline-block; text-align:center; margin:0; padding:0;}   
+/* slider style End*/
+/* price table */
+.wp-smartstudy .pricetable-holder {margin-bottom:10px;}
+.wp-smartstudy .pricetable-holder .cs-price{border-top-right-radius:2px;border-top-left-radius:2px;}
+.wp-smartstudy .pricetable-holder, ul.cs-pricetable .pricetable-holder .cs-price a.cs-button {border:1px solid #eeeeee;border-radius:2px;}
+.wp-smartstudy .pricetable-holder .cs-price{text-align:center;padding-top:22px;padding-bottom:28px;}
+.wp-smartstudy .pricetable-holder .cs-price span{font-size:40px;font-weight:bold;color:#fff;display:block;padding:10px 0 12px;font-family: 'Montserrat', sans-serif;}
+.wp-smartstudy .pricetable-holder .cs-price small{font-weight:500;font-size:100%}
+.wp-smartstudy .pricetable-holder .cs-price em{text-transform:uppercase;font-size:10px;font-style:normal;font-weight:200;}
+.wp-smartstudy .pricetable-holder .cs-price a.cs-button{display:inline-block;font-size:11px;font-weight:bold;text-transform:uppercase;height:39px;width:141px;padding-top:5px;text-decoration:none;outline:none; border-radius:5px;}
+.wp-smartstudy .pricetable-holder .cs-price a.cs-button:hover{background:rgba(255,255,255,.25) !important;color:#fff !important;}
+.wp-smartstudy .pricetable-holder ul.price-info li {list-style:none;font-size:12px;padding:12px 0 8px;border-bottom:1px solid #eeeeee;text-align:center;font-family: 'Montserrat', sans-serif;
+letter-spacing:.5px;margin:0;}
+.wp-smartstudy .pricetable-holder ul.price-info li:last-child{border:none;}
+.wp-smartstudy .pricetable-holder ul.price-info{margin:0 20px;padding:12px 0;}
+/* price table */
+/* Shortcode Style */
+/* Simple Tab Style */
+.wp-smartstudy .cs-tabs {margin:0 0 50px;}
+.wp-smartstudy .cs-tabs .nav-tabs {border:none;}
+.wp-smartstudy .cs-tabs .nav-tabs li {margin:0;}
+.wp-smartstudy .cs-tabs .nav-tabs li a {color:#333; text-transform:uppercase; font-weight:600; border-radius:0; padding:15px 35px; background-color:#fafafa; outline:none; text-decoration:none; position:relative; margin:0; border-color: #e2e2e2; font-size:12px; border-left:none; border-bottom:none; box-shadow:1px -1px 1px rgba(0,0,0,0.05) inset;}
+.wp-smartstudy .cs-tabs .nav-tabs li:first-child a {border-left:1px solid #e2e2e2;}
+.wp-smartstudy .cs-tabs .nav-tabs li.active a {border-color:#e2e2e2; background-color:inherit; box-shadow: 1px 0 1px rgba(0, 0, 0, 0.03); margin-top: -16px; padding-top: 30px; border-top:2px solid;}
+.wp-smartstudy .cs-tabs .nav-tabs li.active a:before {position:absolute; bottom:-1px; left:0; height:2px; background-color:#fff; content:""; width:100%;}
+.wp-smartstudy .cs-tabs .nav-tabs li.active a:hover, .cs-tabs .nav-tabs li.active a:focus {border-bottom:none;}
+
+.wp-smartstudy .cs-tabs .tab-content {border:1px solid #e2e2e2; padding:20px; box-shadow:0px 0px 1px rgba(0,0,0,0.05);}
+.wp-smartstudy .cs-tabs .tab-content p {font-size:14px !important; line-height:26px !important; margin:0 0 25px; letter-spacing:0; color:#818181 !important;}
+.wp-smartstudy .cs-tabs .tab-content li {list-style:none; color:#818181; font-size:15px; line-height:26px; position:relative; padding:0 0 0 20px; margin: 0 0 5px;}
+.wp-smartstudy .cs-tabs .tab-content li:before {position:absolute; left:0; top:0; content: "\e315"; font-family: "icomoon"; color: #b9b9b9;}
+/* Simple Tab Style End */
+
+/* vertical Tabs Style */
+.wp-smartstudy .cs-tabs.vertical .nav-tabs {display:inline-block; margin:0 -4px 0 0; vertical-align:top; width:20%;}
+.wp-smartstudy .cs-tabs.vertical .nav-tabs li {width:100%;}
+.wp-smartstudy .cs-tabs.vertical .nav-tabs li a {margin:0; border-bottom:1px solid #e2e2e2; box-shadow:none; border-bottom:none; border-right:none; border-left:1px solid #e2e2e2;}
+.wp-smartstudy .cs-tabs.vertical .nav-tabs li.active a {padding-top:10px; border-top:1px solid #e2e2e2;}
+.wp-smartstudy .cs-tabs.vertical .tab-content {display:inline-block; margin:0 -5px 0 0; vertical-align:top; width:80%;}
+.wp-smartstudy .cs-tabs.vertical .nav-tabs li:last-child a {border-bottom:1px solid #e2e2e2;}
+.wp-smartstudy .cs-tabs.vertical .nav-tabs > li.active:last-child > a:focus,
+.wp-smartstudy .cs-tabs.vertical .nav-tabs > li.active > a:focus,
+.wp-smartstudy .cs-tabs.vertical .nav-tabs > li.active > a {border-bottom:2px solid;}
+.wp-smartstudy .cs-tabs.vertical .nav-tabs li.active a:before {right:-3px; left:auto; width:3px; height:100%; bottom:0;}
+/* vertical Tabs Style End */
+
+.wp-smartstudy .element-heading {margin:0 0 25px;}
+.wp-smartstudy .element-heading h3 {margin:0; text-transform:uppercase !important;}
+
+/* Accordion Style */
+.wp-smartstudy .cs-shortcode-accordion .panel-group .panel {border:none; box-shadow:none; margin: 0 0 10px;}
+.wp-smartstudy .cs-shortcode-accordion .panel-default > .panel-heading {background:none; padding:0;}
+.wp-smartstudy .cs-shortcode-accordion .panel-heading a {font-size:13px; text-decoration:none; outline:none; position:relative; padding: 0 0 0 22px;}
+.wp-smartstudy .cs-shortcode-accordion .panel-heading a.collapsed,
+.wp-smartstudy .cs-shortcode-accordion.fancy .panel-heading a.collapsed, .cs-shortcode-accordion.box .panel-heading a {color:#333 !important;}
+.wp-smartstudy .cs-shortcode-accordion .panel-body {padding:15px 0 0 25px;}
+.wp-smartstudy .cs-shortcode-accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {border:none;}
+
+.wp-smartstudy .cs-shortcode-accordion .panel-heading a.collapsed:before,
+.wp-smartstudy .cs-shortcode-accordion .panel-heading a:before {position:absolute; left:0; top:-3px; color:#aaa !important; content:"\e315"; font-family: "icomoon";}
+.wp-smartstudy .cs-shortcode-accordion .panel-heading a:before {content:"\e313";}
+/* Accordion Style End */
+/* Accordion Fancy Style */
+.wp-smartstudy .cs-shortcode-accordion.fancy .panel-heading a.collapsed:before,
+.wp-smartstudy .cs-shortcode-accordion.fancy .panel-heading a:before {left: 5px; top: 7px;}
+.wp-smartstudy .cs-shortcode-accordion.fancy .panel-heading a {display:block; padding:5px 10px 5px 22px;}
+.wp-smartstudy .cs-shortcode-accordion.fancy .panel-heading a:before, .cs-shortcode-accordion.fancy .panel-heading a {color:#fff !important;}
+.wp-smartstudy .cs-shortcode-accordion.fancy .panel-heading a.collapsed {background-color: inherit !important; padding-top:0; padding-bottom:0;}
+.wp-smartstudy .cs-shortcode-accordion.fancy .panel-heading a.collapsed:before {color:#aaa !important;}
+.wp-smartstudy .cs-shortcode-accordion.fancy .panel-heading a.collapsed:before {top: 3px;}
+/* Accordion Fancy Style End */
+/* Accordion Box Style */
+.wp-smartstudy .cs-shortcode-accordion.box {border:1px solid #f8f8f8;}
+.wp-smartstudy .cs-shortcode-accordion.box .panel-group .panel {border-bottom:1px solid #f8f8f8; margin:0;}
+.wp-smartstudy .cs-shortcode-accordion.box .panel-group .panel:last-child {border-bottom:none; margin-bottom:0;}
+.wp-smartstudy .cs-shortcode-accordion.box .panel-group {margin-bottom:0;}
+.wp-smartstudy .cs-shortcode-accordion.box .panel-heading a {display:block; padding: 5px 0 5px 45px; background-color:#f8f8f8;}
+.wp-smartstudy .cs-shortcode-accordion.box .panel-heading a:before {left: 15px; top:7px;}
+.wp-smartstudy .cs-shortcode-accordion.box .panel-heading a.collapsed {background-color:inherit !important;}
+.wp-smartstudy .cs-shortcode-accordion.box .panel-body {padding: 10px 0 15px 25px;}
+.wp-smartstudy .cs-shortcode-accordion.box .panel-heading a:before {border-radius: 100%; color: #fff !important; height: 20px; line-height: 22px; text-align: center; top: 8px; width: 20px;}
+.wp-smartstudy .cs-shortcode-accordion.box .panel-heading a.collapsed:before {width:auto; height:auto; color:#aaa !important; top: 8px; background-color:inherit !important;}
+/* Accordion Box Style End */
+/* Buttons Style */
+.wp-smartstudy .cs-buttons-style {margin:0 0 25px -25px;}
+.wp-smartstudy .cs-buttons-style a {margin:0 0 0 25px;}
+.wp-smartstudy .cs-btn:hover, .wp-smartstudy .cs-btn:focus {text-decoration:none; outline:none; color:#fff;}
+.wp-smartstudy .cs-btn {display:inline-block; font-size:11px; font-weight:700; text-transform:uppercase; color:#fff; text-align:center; border-radius:2px; text-decoration:none; outline:none; padding:8px 10px; position:relative;}
+.wp-smartstudy .cs-btn.large {min-width:168px;}
+.wp-smartstudy .cs-btn.medium {min-width:138px;}
+.wp-smartstudy .cs-btn.small {min-width:108px;}
+.wp-smartstudy .cs-btn.has-border {border:1px solid;}
+.wp-smartstudy .cs-btn.has-icon {padding-left:50px;}
+.wp-smartstudy .cs-btn.medium.has-icon {padding-left:40px;}
+.wp-smartstudy .cs-btn.has-icon i{background-color: rgba(0, 0, 0, 0.1); left: 0; line-height: 42px; position: absolute; top: 0; width: 40px;}
+.wp-smartstudy .cs-btn.has-shadow {box-shadow:0 -4px 0 rgba(0, 0, 0, 0.1) inset;}
+/* Buttons Style End */
+/* Shortcode Table Style */
+.wp-smartstudy .cs-shortcode-table span {font-size: 14px; text-transform: uppercase; display: block; color: #333; margin: 0 0 10px; font-weight: 600;}
+.wp-smartstudy .cs-shortcode-table table thead {border:1px solid #e4e4e4;}
+.wp-smartstudy .cs-shortcode-table table thead tr th {font-size:12px; color:#fff; font-weight:400; font-family: 'Montserrat', sans-serif; border-color:rgba(226,226,226,0.5); padding: 5px 25px;}
+.wp-smartstudy .cs-shortcode-table table thead tr th:first-child {padding-left:20px;}
+.wp-smartstudy .cs-shortcode-table table tbody {box-shadow: 0 0 0 5px #e4e4e4 inset;}
+.wp-smartstudy .cs-shortcode-table table tbody tr:nth-child(even) {background-color:#f8f8f8;}
+.wp-smartstudy .cs-shortcode-table table tbody tr:nth-child(odd) {background-color:#fff;}
+.wp-smartstudy .cs-shortcode-table table tbody td {color: #666; font-size: 12px; padding: 15px 0; text-align: center; line-height:normal; letter-spacing:0;}
+.wp-smartstudy .cs-shortcode-table table tbody td:first-child {color:#333; padding-left:20px; text-align:left;}
+/* Shortcode Table Style End */
+/* Shortcode Fancy Table Style */
+.cs-shortcode-table.fancy {padding: 35px 0 0;}
+.wp-smartstudy .cs-shortcode-table.fancy table thead {border:none;}
+.wp-smartstudy .cs-shortcode-table.fancy table thead tr th:first-child {background-color:inherit !important; padding:0; color:#333; text-transform:uppercase; font-size:14px; padding:0; border:none; vertical-align: top; line-height:normal;}
+/* Shortcode Fancy Table Style End */
+/* Simple Counter Style Start */
+.wp-smartstudy .cs-counter.simple strong {margin:0 0 18px;}
+.wp-smartstudy .cs-counter.simple .cs-text span {display:block; margin:0 0 2px; font-size:13px; color:#333; font-weight:700;}
+.wp-smartstudy .cs-counter-holder li .cs-counter.simple:before {position:absolute; left:50%; top:50%; content:"\f1bf"; font-family: "icomoon"; font-size:160px; margin: 0 0 0 -80px; color:rgba(97,97,97,0.04);}
+.wp-smartstudy .cs-counter-holder li:nth-child(2) .cs-counter.simple:before {content:"\f220";}
+.wp-smartstudy .cs-counter-holder li:last-child .cs-counter.simple:before {content:"\f19f";}
+/* Simple Counter Style End */
+
+/* Progressbar Style Start */
+.wp-smartstudy .cs-progress-holder h6 {text-transform:uppercase !important; font-weight: 400 !important; margin: 0 0 15px;}
+.wp-smartstudy .cs-progressbar {margin:0 0 12px;}
+.wp-smartstudy .cs-progressbar .skillbar {background:url(assets/extra-images/progress-bg.png) repeat #f1f1f1;display:inline-block;width:100%;}
+.wp-smartstudy .cs-progressbar .skillbar-bar {position:relative; height:35px;float:left;}
+.wp-smartstudy .cs-progressbar.fancy .skillbar-bar{overflow:visible !important;}
+.wp-smartstudy .cs-progressbar .skillbar-bar strong{position:absolute; left:10px; top:0; text-transform:uppercase; color:#fff; line-height:35px;}
+.wp-smartstudy .cs-progressbar .skillbar-bar span {position:absolute; right:0; top:0; background-color:rgba(0,0,0,0.1); height:35px; font-size:12px; color:#fff; font-weight:700; line-height: 35px; padding: 0 5px;}
+/* Progressbar Style End */
+/* Fancy Progressbar Style Start*/
+.wp-smartstudy .cs-progressbar.fancy {margin-bottom:7px;} 
+.wp-smartstudy .cs-progressbar.fancy .skillbar {background-color:#ebebeb; background-image: none;}
+.wp-smartstudy .cs-progressbar.fancy .skillbar-bar {height:15px; background:url(assets/extra-images/progress-bg.png) repeat;}
+.wp-smartstudy .cs-progressbar.fancy strong {display:block; margin:0 0 5px; color:#585858; line-height:normal;}
+.wp-smartstudy .cs-progressbar.fancy .skillbar-bar span {background-color: #f5f1ed; border: 1px solid #cfcfcf; color: #585858; font-size: 11px; height: 20px; line-height: 16px; right: -20px; top: -20px;}
+.wp-smartstudy .cs-progressbar.fancy .skillbar-bar span:before {position:absolute;}
+.wp-smartstudy .cs-progressbar.fancy .skillbar-bar span:after, .cs-progressbar.fancy .skillbar-bar span:before {top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none;}
+.cs-progressbar.fancy .skillbar-bar span:after {border-color: rgba(136, 183, 213, 0); border-top-color: #f5f1ed; border-width: 3px; margin-left: -3px;}
+.wp-smartstudy .cs-progressbar.fancy .skillbar-bar span:before {border-color: rgba(194, 225, 245, 0); border-top-color: #cfcfcf; border-width: 5px; margin-left: -5px;}
+/* Fancy Progressbar Style End */
+
+/* Call Actions Style Start*/
+.wp-smartstudy .call-actions {display:table; width:100%;}
+.wp-smartstudy .call-actions .cell {display:table-cell; vertical-align:middle;}
+.wp-smartstudy .call-actions .heading h5 {margin:0 0 5px;}
+.wp-smartstudy .call-actions .heading h5, .call-actions .heading p{color:#fff !important;}
+.wp-smartstudy .call-actions .heading p {margin:0;}
+.wp-smartstudy .call-actions .cell-btn .information-btn {float:right; border:1px solid #fff; font-size:11px; color:#fff; text-transform:uppercase; font-weight: 600;
+    padding: 10px 20px; border-radius:3px; text-decoration:none; outline:none;}
+.wp-smartstudy .cell.icon {padding: 0 15px 0 0;}
+.wp-smartstudy .cell.icon i {font-size: 40px; color: #fff;}
+/* Call Actions Style End*/
+
+/*Dropcap Style Start*/
+.wp-smartstudy .cs-dropcap-one p, .cs-dropcap-two p {letter-spacing:0 !important;}
+.wp-smartstudy .cs-dropcap-one p:first-letter{color: #fff; float: left; font-size: 65px; margin: 8px 10px 0 0; padding: 8px 12px;}
+.wp-smartstudy .cs-dropcap-two p:first-letter{float: left; font-size: 75px; margin: 6px 10px 0 0;}
+/*Dropcap Style End*/
+/*Fancy Blockquote Style Start*/
+.wp-smartstudy blockquote.fancy{padding: 0px 0 0 25px; background:none; border-left: 6px solid; font-size: 18px;}
+.wp-smartstudy blockquote.fancy p:before{display: none;}
+.wp-smartstudy blockquote.fancy p{color: #333 !important; font-size: 18px !important; font-style: italic; line-height: 30px; margin-bottom: 10px !important; letter-spacing: 0;}
+.wp-smartstudy blockquote.fancy .cs-author-name{font-size: 14px; color: #aaa;}
+/*Fancy Blockquote Style End*/
+/*List Style Start*/
+.wp-smartstudy .liststyle li {letter-spacing:0; width:100%; float: left;}
+
+.wp-smartstudy .liststyle .cs-bulletslist li {padding: 0 0 0 5px; list-style: outside none disc; margin-left:15px;}
+
+.wp-smartstudy .liststyle .cs-number-list li {list-style: outside none decimal-leading-zero; padding: 0 0 0 5px; margin-left:15px;}
+
+.wp-smartstudy .liststyle .cs-unorderedlist li {list-style: none;}
+
+.wp-smartstudy .liststyle .cs-upper-alphalist li {padding: 0 0 0 5px; list-style: outside none upper-alpha; margin-left:15px;}
+
+.wp-smartstudy .liststyle .cs-iconlist li {list-style:none;}
+.wp-smartstudy .liststyle .cs-iconlist li i {margin:0 8px 0 0;}
+
+.wp-smartstudy .liststyle .has-border li {border-bottom:1px solid #f6f6f6; padding: 2px 0;}
+
+/*List Style End*/
+
+/*Alerts Style Start*/
+.wp-smartstudy .messagebox {padding:12px 15px; border-radius:3px; position:relative; border:none; background-image:none; float:left; width:100%;}
+.wp-smartstudy .alert-success {background-color:#8c9b1e;}
+.wp-smartstudy .messagebox button {position:absolute; right:15px; font-size: 18px; top:50%; margin:-12px 0 0 0; border:none; color:#fff; line-height:normal; background:none;}
+.wp-smartstudy .messagebox .cs-text {float:left;}
+.wp-smartstudy .messagebox span, .wp-smartstudy .alert strong,
+.wp-smartstudy .messagebox p {font-size:18px; color:#fff !important; display:inline-block; margin:0 10px 0 0; vertical-align:middle;}
+.wp-smartstudy .messagebox p {font-size:14px;}
+
+.wp-smartstudy .messagebox.alert-danger {background-color:#e72c1d;}
+.wp-smartstudy .messagebox.alert-danger .cs-text span {border: 2px solid #fff; border-radius: 100%; height: 22px; line-height: 16px; text-align: center; width: 22px;}
+
+.wp-smartstudy .messagebox.alert-warning {background-color:#be8624;}
+
+.wp-smartstudy .messagebox.alert-info {background-color:#5da4e5;}
+/*Alerts Style End*/
+
+/*Message Box Style*/
+.wp-smartstudy .messagebox-v2 {border:1px solid #e7e7e7; background-color:#fafafa; border-radius:0; position:relative; width:100%; float:left; padding:30px;}
+.wp-smartstudy .messagebox-v2 button {position:absolute; right:10px; top:8px; border:none; background:none; color:#656565; font-size:18px;}
+.wp-smartstudy .messagebox-v2 .cs-media {display:inline-block; vertical-align:middle; margin: 0 15px 0 0;}
+.wp-smartstudy .messagebox-v2 .cs-media i {font-size:70px;}
+.wp-smartstudy .messagebox-v2 .cs-media .circle {border-radius: 100%; float: left; height: 67px; line-height: 82px; text-align: center; width: 67px;}
+.wp-smartstudy .messagebox-v2 .cs-media .circle i {font-size:30px; color:#fff;}
+
+.wp-smartstudy .messagebox-v2 .cs-text {display:inline-block; vertical-align:middle; letter-spacing:0;}
+.wp-smartstudy .messagebox-v2 .cs-text p {margin:5px 0 0 0; letter-spacing:0;}
+.wp-smartstudy .messagebox-v2.alert strong {display:block; color:#333 !important; font-size:20px;}
+.wp-smartstudy .messagebox-v2 .buy-now-btn {border-radius: 3px; color: #fff; font-weight: 700; line-height: normal; margin: -20px 0 0; padding: 10px 25px 12px; position: absolute; right: 40px; text-transform: uppercase; top: 50%; text-decoration:none; outline:none;}
+
+.messagebox-v2.simple {overflow:hidden;}
+.messagebox-v2.simple .cs-media{left: -25px; position: absolute; top: -25px; z-index: 1; opacity:0.1;}
+.messagebox-v2.simple .cs-media i {font-size:160px;}
+.messagebox-v2.simple .cs-text {position:relative; z-index:2;}
+/*Message Box Style End*/
+
+/*Separator Style*/
+.cs-separator {float: left; position: relative; text-align: center; width: 100%; margin:0 0 30px; text-align:center; line-height:normal;}
+.cs-separator .devider1 {position:relative; border-bottom: 1px dotted #c3c3c3;}
+.cs-separator .devider1:before,
+.cs-separator .devider1:after {background-color: #fff; border: 2px solid #b4b4b4; content: ""; height: 10px; left: 0; position: absolute; top: -5px; width: 10px;}
+.cs-separator .devider1:after {right:0; left:auto;}
+
+.cs-separator .devider2 {border-bottom:1px solid #e4e4e4;}
+
+.cs-separator .devider3 {width:63x; display:inline-block; position:relative;}
+.cs-separator .devider3:before,
+.cs-separator .devider3:after {position:absolute; left:-28px; top:6px; content:""; background:url(assets/extra-images/separator1.png) no-repeat; width:26px; height:6px;}
+.cs-separator .devider3:after {background:url(assets/extra-images/separator2.png) no-repeat; right:-28px; left:auto;}
+
+
+.cs-separator .devider4 {width:282px; display:inline-block; overflow:hidden;}
+.cs-separator .devider-inner {position:relative; display:inline-block;}
+.cs-separator .devider-inner:before{position:absolute; left:100%; top:13px; width:9999px; border-bottom:1px dotted #b4b4b4; content:""; margin:0 0 0 10px;}
+.cs-separator .devider-inner:after{position:absolute; top:13px; width:9999px; border-bottom:1px dotted #b4b4b4; content:""; margin:0 10px 0 0; right:100%;}
+.cs-separator .devider4 span {height:3px; width:3px; display:inline-block; border-radius: 100%;}
+
+.cs-separator .devider5 {display:inline-block; width:70px; height:6px; background:url(assets/extra-images/separator3.png) repeat center;}
+
+.cs-separator .devider6 {border-top:1px dotted #ccc; border-bottom:1px dotted #ccc; height:3px;}
+/*Separator Style End*/
